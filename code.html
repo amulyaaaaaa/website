@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style type="text/css">
+ *{
+ margin: 0px;
+ padding: 0px;
+
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.card{
+ background-color: #f4f3f3;
+ width: auto;
+ height: 750px;
+ margin-left: center;
+ text-align: center;
+ margin: 20%;
+ border-radius: 10px;
+}
+
+.card-background{
+ background: linear-gradient(to right, #009688, #4CAF50);
+ height: 160px;
+ width: 100%;
+ border-top-left-radius: 100px;
+ border-top-right-radius: 10px;
+}
+
+.card-image{
+ border-radius: 50%;
+ width: 120px;
+ height: auto;
+ position: relative;
+ top: 100px;
+ border: 6px solid #f4f3f3;
+}
+
+.card-info{
+ margin-top: 80px;
+ padding: 10px;
+}
+
+.fab{
+ color: grey;
+ font-size: 24px;
+ margin: 15px;
+ cursor: pointer;
+}
+
+.fab:hover{
+ color: #524b4b;
+}
+
+h1{
+ color: #009688; 
+}
+
+p{
+ color: grey;
+}
+</style>
+
+</head>
+<body>
+
+ <div class="card" >
+
+  <!-- it Will contain 5 elements -->
+
+  <div class="card-background">
+   
+    <img src="data:image/jpeg;base64,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" class="card-image">
+
+  </div>
+<!-- creating div class for names or heading -->
+
+  <div class="card-info">
+   
+    <h1>
+Amulya Priyadarshini Konathala</h1>
+<br/>
+    <p>Information Technology Graduate from GVPCE(A), Andhra Pradesh</p>
+<br> 
+	<p><b>Experience 1:</b> AI & ML Research Associate in Miracle Software Systems(Private Sector)</p> <br>
+
+      <!--  <p></p>  <br> <br> 	-->		
+    
+<p><b>Experience 2:</b> Ward Education & Data Processing Secratery(Government Sector)</p> <br> 
+				
+        <p><b>Experience 3:</b> Professional Teacher at WhiteHat Junior</p> <br> 
+	<p><b>Technical Skills Acquired:</b> Python, Machine Learning, Deep Learning, Artifical Intelligence, Tensorflow, Caffe, Java, C, JavaScript, node.js, </p>  <br> 
+
+	<p><b>Projects: </b> SAP Leonardo Machine Learning,<br>Object Detection using Tensorflow,<br>PDF Text and Image Comparison using Machine Learning.</p>  <br> <br> 
+</div>
+
+</div>
+</body>
+</html>
